@@ -1,0 +1,272 @@
+/* Фон шапки */
+.header {
+  width: 100%;
+  min-height: 450px;
+
+  background-image: url("../../images/banner-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+.header::after {
+  content: "";
+  width: 100%;
+  min-height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Рабочая область шапки */
+.contentHeader {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Верстка логотипа */
+.logoHeader {
+  margin: 28px 0 0 15px;
+  padding: 0 0 0 3px;
+}
+.logo {
+  width: 176px;
+  height: auto;
+}
+
+/* Верстка меню */
+.menuHeader {
+  margin: 28px 15px 0 0;
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.menuListHeader {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.menuItemHeader {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menuLinkHeader {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menuLinkHeader:hover {
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Вертска кнопки */
+.menuButtonHeader {
+  width: 1.4em;
+  height: 1em;  
+  border: none;
+  padding: 0;
+
+  background-color: transparent;
+  font-size: 25px;
+  position: relative;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.menuButtonHeader:before, .menuButtonHeader:after {
+  content:"";
+  width: 100%;
+  height: 20%;
+
+  border-radius: 5px;
+  background-color: #ffffff;  
+
+  position: absolute;
+  left: 0;
+}
+
+.menuButtonHeader:before {
+  top: 0;
+}
+
+.menuButtonHeader:after {
+  bottom: 0;
+}
+
+.labelButtonHeader {
+  width: 100%;
+  height: 20%;
+  margin-top: -0.1em;  
+
+  border-radius: 5px;
+  background-color: #ffffff;  
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+/* Tittle */
+.containerHeader {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sloganHeader {
+  display: flex;
+  min-height: auto;
+  width: 650px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleHeader {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 45px;
+  color: white;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin: 0;
+}
+
+.logoLinkMobHeader, .logoMob {
+  display: none;
+}
+
+@media (min-width: 1200px) { 
+  .menuItemHeader:nth-child(n + 2) {
+  margin-left: 35px;
+  }
+  .menuButtonHeader, .menuButtonHeader:before, .menuButtonHeader:after, .labelButtonHeader {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+  .menuButtonHeader, .menuButtonHeader:before, .menuButtonHeader:after, .labelButtonHeader {
+    display: none;
+  } 
+  .sloganHeader {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;    
+  }
+  .menuHeader {
+    text-align: right;
+  }
+  .menuItemHeader:nth-child(n + 2) {
+    margin-left: 35px;
+  }
+  .titleHeader {
+    font-size: 2.656em;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 641px) {
+  .header {
+    background-image: url("../../images/banner-bg-tablet.jpg");
+  }
+
+  .sloganHeader {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;    
+  }
+  .menuListHeader {
+    display: none;
+  }
+  .titleHeader {
+    font-size: 2.5em;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    width: 100%;
+    min-height: 640px;
+    background-image: url("../../images/banner-mobile.jpg");
+
+  }
+  .header::after {
+    content: "";
+    width: 100%;
+    min-height: 640px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+
+  .logoHeader, .logo, .menuListHeader {
+    display: none;
+  }
+
+  .contentHeader {
+    display: flex;
+    justify-content: end;
+  }
+
+  .sloganHeader {
+    margin-top: 172px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoLinkMobHeader {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .logoMob {
+    width: 270px;
+    height: auto;
+    display: block;
+  }
+  .titleHeader {
+    padding: 0;
+    margin: 0;
+    font-size: 1.625em;
+    line-height: 36px;
+  }
+}

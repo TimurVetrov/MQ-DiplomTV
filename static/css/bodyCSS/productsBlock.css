@@ -1,0 +1,274 @@
+.containerProducts {
+    max-width: 1200px;
+    height: auto;
+    margin: 64px auto 64px auto;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTitleProducts {
+    margin: 0 auto 0 auto;
+    text-align: center;  
+}
+.titleProducts {
+    width: auto;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    line-height: 29px;
+    text-align: center; 
+    text-transform: uppercase;
+}
+.titleProducts::after {
+    content: "";
+    width: 66px;
+    margin: 8px auto 0 auto;
+    border-bottom: 3px solid #b59f5b;
+    opacity: 0.4;
+
+    display: block;
+}
+
+.containerContentProduct {
+    max-width: 1200px;
+    height: auto;
+    margin-top: 28px;
+    padding: 0 23px 0 23px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+.cardProduct {
+    height: auto;
+    max-width: 347px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.containerImgProduct {
+    position: relative;
+    top: 27px;
+    padding-left: 24px;
+    padding-right: 24px;
+    z-index: -1;
+}
+
+.imgProduct {
+    align-items: center;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.contentProduct {
+    max-width: 299px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 54px 24px 54px 24px;
+
+    border: 3px solid rgb(181, 159, 91);;
+}
+
+
+
+.tittleProduct {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+.tittle1:hover {
+    color: #b59f5b;
+}
+
+.blockTextProduct {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.textProduct {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    line-height: 22px;
+}
+
+.linkVideoProduct {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #b59f5b;;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footerProduct {
+    width: 299px;
+    display: flex;
+    justify-content: space-between;
+}
+.pricesProduct {
+    display: flex;
+    flex-direction: column;  
+}
+
+.priceOldProduct {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+    text-decoration: line-through;
+}
+.priceNewProduct {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+
+.buttonProduct {
+    width: 140px;
+    height: 45px;
+
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #b59f5b;
+    border: 0; 
+}
+.buttonProduct:hover {
+    cursor: pointer;
+    background-color: #323232;
+}
+
+@media (max-width: 768px) and (min-width: 641px)  {
+    .containerProducts {
+        width: 100%;
+        height: auto;
+        margin: 64px auto 64px auto;
+        padding: 0;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titleProducts {
+        width: auto;
+        font-family: "OpenSans", Arial, sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 18px;
+        color: black;
+        line-height: 29px;
+        text-align: center; 
+        text-transform: uppercase;
+    }
+    .titleProducts::after {
+        content: "";
+        width: 66px;
+        margin: 8px auto 0 auto;
+        border-bottom: 3px solid #b59f5b;
+        opacity: 0.4;
+    
+        display: block;
+    }
+
+    .containerContentProduct {
+        width: 100%;
+        height: auto;
+        margin-top: 28px;
+        padding: 0 23px 0 23px;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .cardProduct {
+        height: auto;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 641px) {
+    .containerProducts {
+        width: 100%;
+        height: auto;
+        margin: 64px auto 64px auto;
+        padding: 0;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titleProducts {
+        width: auto;
+        font-family: "OpenSans", Arial, sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 18px;
+        color: black;
+        line-height: 29px;
+        text-align: center; 
+        text-transform: uppercase;
+    }
+    .titleProducts::after {
+        content: "";
+        width: 66px;
+        margin: 8px auto 0 auto;
+        border-bottom: 3px solid #b59f5b;
+        opacity: 0.4;
+    
+        display: block;
+    }
+
+    .containerContentProduct {
+        width: 100%;
+        height: auto;
+        margin-top: 28px;
+        padding: 0 23px 0 23px;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .cardProduct {
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
