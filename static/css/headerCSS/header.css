@@ -66,6 +66,9 @@
   display: inline-block;
   vertical-align: middle;
 }
+.menuItemHeader:nth-child(n + 2) {
+  margin-left: 35px;
+}
 
 .menuLinkHeader {
   font-family: "OpenSans", Arial, sans-serif;
@@ -165,9 +168,6 @@
 }
 
 @media (min-width: 1200px) { 
-  .menuItemHeader:nth-child(n + 2) {
-  margin-left: 35px;
-  }
   .menuButtonHeader, .menuButtonHeader:before, .menuButtonHeader:after, .labelButtonHeader {
     display: none;
   }
@@ -184,9 +184,6 @@
   }
   .menuHeader {
     text-align: right;
-  }
-  .menuItemHeader:nth-child(n + 2) {
-    margin-left: 35px;
   }
   .titleHeader {
     font-size: 2.656em;

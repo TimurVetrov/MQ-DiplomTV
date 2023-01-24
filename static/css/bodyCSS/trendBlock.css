@@ -176,10 +176,22 @@
   .textResourceTrend {
     font-size: 18px;
   }
+  .linkNavTrend {
+    font-size: 0.813em;
+  }
+  .listNavTrend:nth-child(n + 2) {
+    margin-left: 15px;
+  }
 }
 @media (max-width: 859px) and (min-width: 769px) {
   .textResourceTrend {
     font-size: 17px;
+  }
+  .linkNavTrend {
+    font-size: 0.75em;
+  }
+  .listNavTrend:nth-child(n + 2) {
+    margin-left: 13px;
   }
 }
 

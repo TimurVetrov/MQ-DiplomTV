@@ -46,7 +46,7 @@
 
 .cardProduct {
     height: auto;
-    max-width: 347px;
+    max-width: 30%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -60,7 +60,7 @@
     z-index: -1;
 }
 
-.imgProduct {
+.imgProducts {
     align-items: center;
     max-width: 100%;
     margin-right: auto;
@@ -69,14 +69,15 @@
 }
 
 .contentProduct {
-    max-width: 299px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
     padding: 54px 24px 54px 24px;
 
-    border: 3px solid rgb(181, 159, 91);;
+    border: 3px solid rgb(181, 159, 91);
+    flex-grow: 1;
 }
 
 
@@ -123,9 +124,10 @@
 }
 
 .footerProduct {
-    width: 299px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    
 }
 .pricesProduct {
     display: flex;
@@ -149,7 +151,7 @@
 }
 
 .buttonProduct {
-    width: 140px;
+    width: 48%;
     height: 45px;
 
     font-family: "OpenSans", Arial, sans-serif;
@@ -217,6 +219,7 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        
     }
 }
 
