@@ -11,7 +11,7 @@
   }
   
   /* Рабочай область для БЛОКА доп контента _________________________*/
-  .aside__post {
+  .postAside {
     width: 272px;
     height: auto;
     margin-bottom: 62px;
@@ -26,7 +26,7 @@
   }
   
   /* Рабочай область для поста _________________________*/
-  .container-post {
+  .containerPostAside {
     width: 271px;
     height: auto;
     margin-bottom: 22px;
@@ -40,11 +40,11 @@
   }
   
   /* Верстка заголовка h3 */
-  .aside-title {
+  .titleAside {
     text-align: center;
   }
   
-  .aside-title::after {
+  .titleAside::after {
     content: "";
     width: 66px;
     margin: 8px auto 0 auto;
@@ -54,7 +54,7 @@
     display: block;
   }
   
-  .aside-title__resource {
+  .titleResourceAside {
     font-family: "OpenSans", Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -69,7 +69,7 @@
   }
   
   /* Верстка поста */
-  .new-post {
+  .newPostAside {
     margin-top: 20px;
     height: auto;
     display: flex;
@@ -78,7 +78,7 @@
     justify-content: start;
   }
   
-  .new-post__img {
+  .newPostImgAside {
     box-sizing: border-box;
     width: 70px;
     height: auto;
@@ -87,14 +87,14 @@
     justify-content: center;
   }
   
-  .post-content {
+  .newPostContentAside {
     box-sizing: border-box;
     width: 201px;
     padding-left: 20px;
     height: auto;
   }
   
-  .block-data__date {
+  .dataAside {
     font-family: "OpenSans", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -103,13 +103,13 @@
     text-align: left;
   }
   
-  .title-post {
+  .titleNewPostAside {
     margin-right: 0;
     padding-right: 0;
     margin-top: 5px;
   }
   
-  .title-post__resource {
+  .titleNewPostResourceAside {
     font-family: "OpenSans", Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -121,12 +121,12 @@
     line-height: 18px;
   }
   
-  .title-post__resource:hover {
+  .titleNewPostResourceAside:hover {
     color: #b59f5b;
   }
   
   /* Верстка формы в посте */
-  .post-search {
+  .postSearchAside {
     width: 271px;
     height: auto;
     margin-top: 60px;
@@ -139,7 +139,7 @@
   }
   
   /* Верстка кнопки */
-  .post-button {
+  .postButtonAside {
     width: 50px;
     height: 50px;
   
@@ -150,20 +150,20 @@
     background-position: center center;
     border: 0;
   }
-  .post-button:hover {
+  .postButtonAside:hover {
     cursor: pointer;
     background-color: #323232;
   }
   
   /* Верстка input */
-  .post-field {
+  .postFieldAside {
     height: 50px;
     width: 200px;
     padding-left: 19px;
     background: #f4f7f6;
     border: 0;
   }
-  .post-field:focus {
+  .postFieldAside:focus {
     content: "";
     height: 50px;
     width: 200px;
@@ -176,7 +176,7 @@
   
   
   /* Верстка aside__mailing ______________________________________*/
-  .aside__mailing {
+  .mailingAside {
     width: 272px;
     height: auto;
     margin-bottom: 62px;
@@ -190,7 +190,7 @@
     flex-direction: column;
   }
   
-  .subscription {
+  .subscriptionASide {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -198,13 +198,13 @@
     flex-direction: column;
   }
   
-  .subscription-group {
+  .subscriptionGroupAside {
     width: 271px;
     margin-top: 27px;
     margin-bottom: 16px;
   }
   
-  .subscription__field {
+  .subscriptionFieldAside {
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 19px;
@@ -212,7 +212,7 @@
     background: #f4f7f6;
     border: 0;
   }
-  .subscription__field:focus {
+  .subscriptionFieldAside:focus {
     content: "";
     padding-top: 17px;
     padding-bottom: 17px;
@@ -225,7 +225,7 @@
     outline-color: #b59f5b;
   }
   
-  .subscription__button {
+  .subscriptionButtonAside {
     width: 271px;
     height: auto;
     padding-top: 16px;
@@ -240,13 +240,13 @@
     background-color: #b59f5b;
     border: 0;
   }
-  .subscription__button:hover {
+  .subscriptionButtonAside:hover {
     cursor: pointer;
     background-color: #323232;
   }
   
   /* Верстка aside__tag ______________________________________*/
-  .aside__tag {
+  .tagAside {
     width: 272px;
     height: auto;
     margin-bottom: 62px;
@@ -260,12 +260,12 @@
     flex-direction: column;
   }
   
-  .menu {
+  .menuAside {
     margin-top: 20px;
     margin-left: 17px;
   }
   
-  .menu-list {
+  .menuListAside {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -273,17 +273,16 @@
     flex-wrap: wrap;
   }
   
-  .menu-list-item,
-  .menu-list-item-ces,
-  .menu-list-item-to {
+  .menuListItemAside,
+  .menuListItemAside-margin {
     margin-top: 15px;
   }
   
-  .menu-list-item:nth-child(n + 2) {
+  .menuListItemAside:nth-child(n + 2) {
     margin-left: 5px;
   }
   
-  .menu-link {
+  .menuLinkAside {
     box-sizing: border-box;
     width: auto;
     font-family: "OpenSans", Arial, sans-serif;
@@ -298,30 +297,30 @@
     padding: 4px 13px 4px 13px;
   }
   
-  .menu-link:hover {
+  .menuLinkAside:hover {
     border: 2px solid #b59f5b;
   }
   
   /* Верстка aside__topic ______________________________________*/
-  .topic-menu {
+  .topicMenuAside {
     margin-top: 25px;
     padding-left: 2px;
   }
   
-  .topic-menu-list {
+  .topicMenuListAside {
     list-style-type: none;
   }
   
-  .topic-menu-list-item {
+  .topicMenuListItemAside {
     height: 46px;
     border-bottom: 1px solid rgba(182, 159, 91, 0.3);
   }
   
-  .topic-menu-list-item:nth-child(n + 2) {
+  .topicMenuListItemAside:nth-child(n + 2) {
     margin-top: 15px;
   }
   
-  .topic-menu-link {
+  .topicMenuLinkAside {
     font-family: "OpenSans", Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -331,11 +330,11 @@
     text-align: center;
   }
   
-  .topic-menu-link:hover {
+  .topicMenuLinkAside:hover {
     color: #b59f5b;
   }
   
-  .sup {
+  .supAside {
     font-family: "OpenSans", Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
