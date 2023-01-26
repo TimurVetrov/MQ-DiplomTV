@@ -13,7 +13,7 @@
   
   /* Рабочай область для основного контента _________________________*/
   .main {
-    width: 778px;
+    width: 65%;
     height: auto;
     margin: 0 0 0 15px;
     padding: 0;
@@ -34,7 +34,8 @@
   
   /* стилизация картинки_________________________*/
   .cardImgMain {
-    width: 381px;
+    /* width: 381px; */
+    width: 49%;
     height: auto;
     padding: 0;
     box-sizing: border-box;
@@ -49,7 +50,8 @@
   .cardContentMain {
     box-sizing: border-box;
     padding-left: 30px;
-    max-width: 397px;
+    /*width: 397px; */
+    width: 41%;
     height: auto;
     display: flex;
     align-items: flex-start;
@@ -147,10 +149,14 @@
     color: black;
     line-height: 22px;
   }
-  
-  .CardContentMain:nth-child(n + 2) {
+
+  .two {
     margin-top: 10px;
   }
+  
+  /* .CardContentMain:nth-child(n + 2) {
+    margin-top: 10px;
+  } */
 
   @media (max-width: 768px) and (min-width: 641px)  {
     .cardMain {
