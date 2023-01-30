@@ -14,7 +14,7 @@
   .postAside {
     width: 272px;
     height: auto;
-    margin-bottom: 62px;
+    margin-bottom: 50px;
     padding-left: 1px;
     box-sizing: border-box;
   
@@ -81,7 +81,7 @@
   .newPostImgAside {
     box-sizing: border-box;
     width: 70px;
-    height: auto;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +129,7 @@
   .postSearchAside {
     width: 271px;
     height: auto;
-    margin-top: 60px;
+    margin-top: 25px;
     box-sizing: border-box;
   
     display: flex;
@@ -179,7 +179,7 @@
   .mailingAside {
     width: 272px;
     height: auto;
-    margin-bottom: 62px;
+    margin-bottom: 50px;
     padding-left: 1px;
     box-sizing: border-box;
   
@@ -249,7 +249,7 @@
   .tagAside {
     width: 272px;
     height: auto;
-    margin-bottom: 62px;
+    margin-bottom: 50px;
     padding-left: 1px;
     box-sizing: border-box;
   
@@ -340,4 +340,70 @@
     font-style: normal;
     font-size: 12px;
     color: #b59f5b;
+  }
+
+  @media (max-width: 914px) and (min-width: 641px)  {
+    .aside {
+      margin-right: 26px;
+    }
+  }
+
+  @media (max-width: 640px)  {
+    .aside {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .postAside {
+      width: 100%;
+      padding: 0px;
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+
+    .containerPostAside {
+      width: 100%;
+      align-items: center;
+    }
+    .titleAside{
+      align-self: center;
+    }
+
+    .titleResourceAside {
+      font-size: 16px;
+    }
+
+    .mailingAside {
+      width: 100%;
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+    .subscriptionGroupAside {
+      width: 100%;
+      align-items: center;
+    }
+    .subscriptionButtonAside {
+      width: 100%;
+      align-items: center;
+    }
+
+    .tagAside {
+      width: 100%;
+      padding: 0px;
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+
+    .topicAside {
+      width: 100%;
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+    
   }

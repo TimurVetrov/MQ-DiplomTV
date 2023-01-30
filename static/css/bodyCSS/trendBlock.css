@@ -172,7 +172,7 @@
     color: #b59f5b;
   }
 
-@media (max-width: 1199px) and (min-width: 860px) {
+@media (max-width: 1199px) and (min-width: 915px) {
   .textResourceTrend {
     font-size: 18px;
   }
@@ -183,19 +183,8 @@
     margin-left: 15px;
   }
 }
-@media (max-width: 859px) and (min-width: 769px) {
-  .textResourceTrend {
-    font-size: 15px;
-  }
-  .linkNavTrend {
-    font-size: 0.75em;
-  }
-  .listNavTrend:nth-child(n + 2) {
-    margin-left: 13px;
-  }
-}
 
-@media (max-width: 768px) and (min-width: 641px) and (orientation: portrait) {
+@media (max-width: 914px) and (min-width: 641px) and (orientation: portrait) {
   .containerTrend {
     margin-top: 53px;
   }
