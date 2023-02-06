@@ -582,23 +582,62 @@
       align-items: flex-start;
     }
 
-    .tagAside {
-      width: 90%;
-      padding: 0px;
+    .topicAside {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 85%;
       padding-right: 16px;
-      margin-left: 16px;
+      margin-left: 25px;
+      
+    }
+    .topicContainerAside {
+      width: 90%;
     }
 
-    .topicAside {      
-      width: 90%;
-      padding-right: 16px;
-      margin-left: 16px;
+    .topicMenuAside {
+      align-items: center;
+      justify-content: center;
     }
+  
 
     .topicMenuListItemAside {
       width: 80%;
     }
     .topicMenuAside {
       padding-left: 15px;
+    }
+
+
+    .tagAside {
+      width: 90%;
+      height: auto;
+      margin: 0 auto 50px auto;
+      box-sizing: border-box;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: start;
+      flex-direction: column;
+    }
+    
+    .menuAside {
+      width: 70%;
+      margin: 20px auto 0 auto;
+    }
+    
+    .menuListAside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .menuListItemAside:nth-child(n + 2) {
+      margin-left: 0px;
     }
   }
