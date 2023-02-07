@@ -66,11 +66,12 @@
     justify-content: flex-start;
     align-items: center;
     list-style-type: none;
+    gap: 20px;
   }
   
-  .cardListMain:nth-child(n + 2) {
+  /* .cardListMain:nth-child(n + 2) {
     margin-left: 20px;
-  }
+  } */
   
   .cardLinkMain {
     font-family: "OpenSans", Arial, sans-serif;

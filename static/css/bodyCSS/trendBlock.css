@@ -127,10 +127,7 @@
     justify-content: flex-start;
     align-items: center;
     list-style-type: none;
-  }
-  
-  .listNavTrend:nth-child(n + 2) {
-    margin-left: 20px;
+    gap: 20px;
   }
   
   .linkNavTrend {
@@ -179,8 +176,8 @@
   .linkNavTrend {
     font-size: 0.813em;
   }
-  .listNavTrend:nth-child(n + 2) {
-    margin-left: 15px;
+  .navTrend {
+    gap: 15px;
   }
 }
 
@@ -241,7 +238,7 @@
     flex-direction: column;
     justify-content: end;   
   }
-  .cardTrend:nth-child(n + 2) {
+  .cardTrend {
     margin-bottom: 2px;
   }
 }

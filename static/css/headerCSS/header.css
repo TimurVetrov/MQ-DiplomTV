@@ -56,6 +56,9 @@
 }
 
 .menuListHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -65,9 +68,6 @@
 .menuItemHeader {
   display: inline-block;
   vertical-align: middle;
-}
-.menuItemHeader:nth-child(n + 2) {
-  margin-left: 35px;
 }
 
 .menuLinkHeader {
